@@ -9,24 +9,22 @@ public class Interval {
         System.out.println("Введите целое число из деапазона 0-100");
         X = in.nextInt();
 
+        if (X<0){
+            System.out.println("Введите число от 0 до 100");
+        }
         if (X<=14){
             System.out.println( "Диапазон [0 -14]" );
-        }else {
-            System.out.println();
         }
         if (X>=15&&X<=35) {
             System.out.println("Диапазон [15 - 35]");
-        } else {
-            System.out.println();
         }
         if (X>=36&&X<=50) {
             System.out.println("Диапазон 36-50" );
-        } else {
-            System.out.println();
         }
         if (X>=51&&X<=100) {
             System.out.println("Диапазон 51-100");
-        }else {
+        }
+        if (X>100){
             System.out.println("Ошибка! Число не попадает в один из имеющихся промежутков");
         }
 
